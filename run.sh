@@ -1,0 +1,1 @@
+/usr/games/gnubg -t -q -p td_gammon/gnubg/bridge.py
