@@ -77,6 +77,6 @@ def run(host, server_class=HTTPServer, handler_class=Handler, port=7711):
 
 
 if __name__ == "__main__":
-    HOST = 'localhost'  # <-- YOUR HOST HERE
+    HOST = '0.0.0.0'  # <-- YOUR HOST HERE
     PORT = 7711  # <-- YOUR PORT HERE
     run(host=HOST, port=PORT)
