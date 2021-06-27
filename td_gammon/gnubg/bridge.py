@@ -69,7 +69,7 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(bytes("Hello! Welcome to Backgammon WebGUI"))
 
 
-def run(host, server_class=HTTPServer, handler_class=Handler, port=8001):
+def run(host, server_class=HTTPServer, handler_class=Handler, port=7711):
     server_address = (host, port)
     httpd = server_class(server_address, handler_class)
     print('Starting httpd ({}:{})...'.format(host, port))
