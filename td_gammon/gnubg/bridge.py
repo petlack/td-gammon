@@ -58,7 +58,8 @@ class Handler(BaseHTTPRequestHandler):
                 )
 
         self._set_headers()
-        self.wfile.write(json.dumps(response))
+        json.dump(response, self.wfile)
+        # self.wfile.write(json.dumps(response))
 
     def do_GET(self):
         parsed = urlparse(self.path)
